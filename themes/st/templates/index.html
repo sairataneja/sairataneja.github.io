@@ -2,6 +2,19 @@
 {% block head_title %}Index{% endblock head_title %}
 {% block head_css %}
     <style>
+      body {
+        background-color: #F7F7F7;
+	margin-top: 8rem;
+      }
+      .img-placeholder {
+      }
+      .hero-img {
+        width: 100%;
+	smax-height: 516px;
+	object-position: center;
+	object-fit: cover;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -10,10 +23,52 @@
         user-select: none;
       }
 
+      .hero-jumbotron {
+	color: #474747;
+        font-family: 'Inconsolata', monospace;
+
+      }
+      .hero-jumbotron ul li {
+	letter-spacing: 0.125rem;
+      }
+
+      .tag-container a {
+            background-color: #FFFFFF;
+            color: #474747;
+	    width: auto;
+	    height: 3rem;
+	    line-height: 3rem;
+	    vertical-align: middle;
+	    padding: 0 1.5rem;
+	    font-size: 1em;
+	    font-family: 'Inconsolata', monospace;
+	    letter-spacing: 0.125rem;
+	    padding-left: calc(0.125rem + 1.5rem);
+	    font-weight: 400;
+	    border-radius: 0rem;
+            text-decoration: none;
+	    margin: 5px;
+      }
+
+      .tag-container a:hover {
+        background-color: #FFE7D9
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+      }
+      @media (max-width: 767px) {
+	body {
+          margin-top: 2rem;
+	}
+        .hero-jumbotron {
+          flex-direction: column-reverse;
+        }
+	.hero-img {
+	  width: 100%;
+	}
       }
     </style>
 {% endblock head_css %}
@@ -21,6 +76,36 @@
 {% endblock head_js %}
 {% block body_content %}
 <main>
+  <div class="container">
+    <div class="row hero-jumbotron">
+      <div class="col-lg-6 col-md-7 col-sm-12 pe-md-3 pe-lg-5">
+        <h1 class="display-4 fw-bold text-center text-md-end mb-4">Saira Taneja</h1>
+	<div class="fs-6 text-center text-md-end">
+          <ul class="list-unstyled text-muted">
+            <li>Statement one</li>
+            <li>Statement two</li>
+            <li>Statement three</li>
+            <li>Statement four</li>
+            <li>Statement six</li>
+            <li>Statement seven</li>
+            <li>Statement eight</li>
+            <li>Statement nine</li>
+	  </ul>
+	</div>
+	<div class="d-inline-flex flex-wrap justify-content-center justify-content-md-end tag-container">
+	    <a href="mailto:taneja+hello@gmail.com">Email</a>
+            <a href="https://linkedin.com">Linkedin</a>
+	    <a href="https://twitter.com">Twitter</a>
+	    <a href="https://medium.com">Medium</a>
+	    <a href="https://instagram.com">Instagram</a>
+	</div>
+      </div>
+      <div class="col-xxl-4 col-md-5 col-sm-12 pb-5 pb-md-0">
+        <img src="images/image-1.jpg" class="hero-img">
+      </div>
+    </div>
+  </div>
+<!--
   <div class="container py-4">
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
@@ -29,7 +114,6 @@
         <button class="btn btn-primary btn-lg" type="button">Example button</button>
       </div>
     </div>
-
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
@@ -51,6 +135,7 @@
       &copy; 2021
     </footer>
   </div>
+-->
 </main>
 {% endblock body_content %}
 
