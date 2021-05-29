@@ -4,7 +4,7 @@
     <style>
       body {
         background-color: #F7F7F7;
-	margin-top: 8rem;
+	margin-top: 6rem;
       }
       .img-placeholder {
       }
@@ -24,36 +24,58 @@
       }
 
       .hero-jumbotron {
-	color: #474747;
         font-family: 'Inconsolata', monospace;
 
       }
       .hero-jumbotron ul li {
-	line-height: 2rem;
 	margin: 30px 0;
-	text-align: justify;
+      }
+
+      .hero-jumbotron a {
+        padding: 4px 4px 1px 4px;
+	text-decoration: none;
+	color: #474747;
+	border-color: #FFE7D9;
+	border-style: solid;
+	border-width: 0 0 3px 0;
+      }
+
+      .hero-jumbotron a:hover {
+        background-color: #FFE7D9
       }
 
       div.tag-container {
         width: 100%;
+	padding: 10px 0 0 0;
       }
 
       .tag-container a {
-            background-color: #FFFFFF;
-            color: #474747;
-	    width: auto;
-	    height: 3rem;
-	    line-height: 3rem;
-	    vertical-align: middle;
-	    padding: 0 1.5rem;
-	    padding-left: calc(0.125rem + 1.5rem);
-	    font-size: 1em;
-	    font-family: 'Inconsolata', monospace;
-	    letter-spacing: 0.125rem;
-	    font-weight: 400;
-	    border-radius: 0rem;
-            text-decoration: none;
-	    margin: 5px 0 ;
+        background-color: #FFFFFF;
+        color: #474747;
+        width: auto;
+        height: 3rem;
+        line-height: 3rem;
+        vertical-align: middle;
+        padding: 0 0.5rem 0 0.7rem;
+	/*
+        padding-left: calc(0.125rem + 1.5rem);
+	*/
+        font-size: 1em;
+        font-family: 'Inconsolata', monospace;
+        letter-spacing: 0.125rem;
+        font-weight: 400;
+        border-radius: 0rem;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+
+      .tag-container a i {
+        color: #FF4D00;
+        margin-right: 0.5rem;
+      }
+
+      .tag-container a:hover i {
+        color: #FF4D00;
       }
 
       .tag-container a:hover {
@@ -95,19 +117,19 @@
             <li>I speak a few languages (native speakers would suggest with awkward accents)</li>
 	    <li>I have spent about 20 days of my life <a href="https://www.dhamma.org/en/about/vipassana" target="_blank">silent</a> (some would encourage me to up that number)</li>
 	    <li>I <a href="https://medium.com/@taneja_34798/21-tips-for-a-successful-indian-pandemic-wedding-14f35ba1e659" target="_blank">married</a> my best friend during the pandemic</li>
-	    <li>I am one part <a href="https://www.amazon.com/Seek-Saira-Taneja-ebook/dp/B07H864ZHP" target="_blank">right-brained</a>, one part <a href="https://www.bentley.edu/academics/graduate-programs/mba" target="_blank">left-brained</a>, one part find that delineation silly</li>
+	    <li>I am one part <a href="https://www.amazon.com/Seek-Saira-Taneja-ebook/dp/B07H864ZHP" target="_blank">right-brained</a>, one part <a href="https://www.indiawest.com/news/global_indian/innovative-healthcare-teams-among-winners-at-mit-hacking-medicine-grand-hack/article_02949edc-5550-11e7-9471-9fd189ae87c6.html" target="_blank">left-brained</a>, one part find that delineation silly</li>
 	    <li>I both attempt <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/106744972211630397204773409281796338191105284157830413959730190405527509401601" target="_blank">art</a> and serve on the board of the <a href="https://artsandbusinesscouncil.org/" target="_blank">Arts & Business Council</a></li>
-	    <li>I frolicked in one of the most <a href="https://www.ideocolab.com/" target="_blank">innovative playgrounds</a> one summer</li>
-	    <li>I have funneled all my persistent curiosity of our minds, bodies, and systems to care for them into <a href="https://www.linkedin.com/in/sairataneja/" target="_blank">a career</a> in healthcare</li>
+	    <li>I frolicked in an <a href="https://www.ideocolab.com/" target="_blank">innovative playground</a> one summer</li>
+	    <li>I have funneled all my curiosity of our minds, bodies, and the systems to care for them into <a href="https://www.linkedin.com/in/sairataneja/" target="_blank">a career</a> in healthcare</li>
 	  </ul>
 	</div>
       </div>
       <div class="col-xxl-4 col-md-5 col-sm-12 pb-5 pb-md-0">
-        <img src="images/image01.jpg" class="hero-img">
-	<div class="d-inline-flex flex-wrap justify-content-center justify-content-md-between tag-container py-3 ">
-            <a href="https://linkedin.com">LinkedIn</a>
-	    <a href="https://medium.com">Medium</a>
-	    <a href="https://twitter.com">Twitter</a>
+        <img src="images/hero_image.jpg" class="hero-img">
+	<div class="d-inline-flex flex-wrap justify-content-around justify-content-xl-between tag-container">
+		<a href="https://linkedin.com/in/sairataneja" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+		<a href="https://medium.com/@taneja_34798/about" target="_blank"><i class="fab fa-medium-m"></i>Medium</a>
+		<a href="https://twitter.com/sairataneja?lang=en" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
 	</div>
       </div>
     </div>
