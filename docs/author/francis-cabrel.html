@@ -84,6 +84,17 @@
         margin-left: 1.5rem;
       }
       .site-header nav a:hover { color: var(--accent); }
+      .site-header nav a.contact {
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        padding: 0.4rem 1.1rem;
+        transition: background-color 0.15s ease, color 0.15s ease;
+      }
+      .site-header nav a.contact:hover {
+        background-color: var(--accent);
+        color: #fff;
+      }
 
       /* ---- hero ---- */
       .hero {
@@ -117,6 +128,13 @@
         transition: border-color 0.15s ease;
       }
       .hero-tagline a:hover { border-bottom-color: var(--accent); }
+      .hero-intro {
+        margin: 1.6rem 0 0;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+        max-width: 48ch;
+      }
       .portrait-wrap { justify-self: center; }
       .portrait {
         width: 100%;
@@ -181,8 +199,10 @@
         .hero-content { order: 2; }
         .portrait-wrap { order: 1; }
         .hero-tagline { margin-left: auto; margin-right: auto; }
+        .hero-intro { margin-left: auto; margin-right: auto; }
         .press-list { grid-template-columns: 1fr; }
-        .site-header nav { display: none; }
+        .site-header nav a:not(.contact) { display: none; }
+        .site-header nav a.contact { margin-left: 0; }
       }
     </style>
   </head>
@@ -192,6 +212,7 @@
     <span class="brand"></span>
     <nav>
       <a href="#press">Press &amp; Appearances</a>
+      <a href="https://www.linkedin.com/in/saira-taneja" target="_blank" rel="noopener" class="contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -201,6 +222,7 @@
     <div class="hero-content">
       <h1 class="hero-name">Saira Taneja</h1>
       <p class="hero-tagline"><a href="https://www.linkedin.com/in/saira-taneja" target="_blank" rel="noopener">COO at Cover Whale</a></p>
+      <p class="hero-intro">I&rsquo;m an operator who enjoys bringing clarity to complexity, building strong teams, and turning ambitious ideas into scalable businesses. Over the years, I&rsquo;ve worked across strategy, customer experience, product, and operations, always focused on creating organizations that are both high-performing and built to last.</p>
     </div>
     <div class="portrait-wrap">
       <img src="images/hero_image.jpg" alt="Saira Taneja" class="portrait">
